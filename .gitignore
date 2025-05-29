@@ -1,4 +1,36 @@
-## Core latex/pdflatex auxiliary files:
+# Ignore data folder by default
+#data/*
+
+# And the output folders that tend to contain lots of large files
+#output/figures/*
+#output/tables/*
+
+# Ignore other files that I tend to make as tests
+*temp*
+
+# R and RStudio
+*.Rout
+*.Rhistory
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+
+# Ignore objects and archives.
+*.[oa]
+
+# Emacs
+*~
+
+# Mac OS admin files
+.DS_Store
+
+
+## LaTeX auxiliary files:
 *.aux
 *.lof
 *.log
@@ -12,18 +44,6 @@
 *.cb2
 .*.lb
 
-## Intermediate documents:
-*.dvi
-*.xdv
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
-
-## Generated if empty string is given at "Please type another file name for output:"
-.pdf
-
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
 *.bbl-SAVE-ERROR
@@ -33,6 +53,15 @@
 *-blx.aux
 *-blx.bib
 *.run.xml
+
+## Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
